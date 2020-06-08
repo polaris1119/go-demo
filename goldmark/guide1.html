@@ -1,0 +1,112 @@
+<p>这是一篇讲解如何正确使用 <strong>Markdown</strong> 的排版示例，学会这个很有必要，能让你的帖子有更加清晰的排版。</p>
+<blockquote>
+<p>引用文本：Markdown is a text formatting syntax inspired</p>
+</blockquote>
+<h2>语法指导</h2>
+<h3>普通内容</h3>
+<p>这段内容展示了在内容里面一些小的格式，比如：</p>
+<ul>
+<li><strong>加粗</strong> - <code>**加粗**</code></li>
+<li><em>倾斜</em> - <code>*倾斜*</code></li>
+<li>~~删除线~~ - <code>~~删除线~~</code></li>
+<li><code>Code 标记</code> - <code>Code 标记</code></li>
+<li><a href="http://github.com">超级链接</a> - <code>[超级链接](http://github.com)</code></li>
+<li><a href="mailto:username@gmail.com">username@gmail.com</a> - <code>[username@gmail.com](mailto:username@gmail.com)</code></li>
+<li>自动链接 - https://studygolang.com</li>
+</ul>
+<h3>提及用户</h3>
+<p>@polaris ... 通过 @ 可以在发帖和回帖里面提及用户，信息提交以后，被提及的用户将会收到系统通知。以便让他来关注这个帖子或回帖。</p>
+<h3>表情符号 Emoji</h3>
+<p>支持表情符号，你可以用系统默认的 Emoji 符号（无法支持 Windows 用户）。
+也可以用图片的表情，输入 <code>:</code> 将会出现智能提示。</p>
+<h4>一些表情例子</h4>
+<p>:smile: :laughing: :dizzy_face: :sob: :cold_sweat: :sweat_smile:  :cry: :triumph: :heart_eyes: :relaxed: :sunglasses: :weary:</p>
+<p>:+1: :-1: :100: :clap: :bell: :gift: :question: :bomb: :heart: :coffee: :cyclone: :bow: :kiss: :pray: :sweat_drops: :hankey: :exclamation: :anger:</p>
+<h3>大标题 - Heading 3</h3>
+<p>你可以选择使用 H2 至 H6，使用 ##(N) 打头，H1 不能使用，会自动转换成 H2。</p>
+<blockquote>
+<p>NOTE: 别忘了 # 后面需要有空格！</p>
+</blockquote>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+<h3>图片</h3>
+<pre><code>![alt 文本](http://image-path.png)
+![alt 文本](http://image-path.png &quot;图片 Title 值&quot;)
+</code></pre>
+<h3>代码块</h3>
+<h4>普通</h4>
+<pre><code>*emphasize*    **strong**
+_emphasize_    __strong__
+@a = 1
+</code></pre>
+<h4>语法高亮支持</h4>
+<p>如果在 ``` 后面跟随语言名称，可以有语法高亮的效果哦，比如:</p>
+<h5>演示 Go 代码高亮</h5>
+<pre><code class="language-go">package main
+
+import (
+    &quot;fmt&quot;
+)
+
+func main() {
+    fmt.Println(&quot;Hello World!&quot;)
+}
+</code></pre>
+<h5>演示 JSON 代码高亮</h5>
+<pre><code class="language-json">{&quot;name&quot;:&quot;Go语言中文网&quot;,&quot;url&quot;:&quot;https://studygolang.com&quot;}
+</code></pre>
+<blockquote>
+<p>Tip: 语言名称支持大部分常用的语言</p>
+</blockquote>
+<h3>有序、无序列表</h3>
+<h4>无序列表</h4>
+<ul>
+<li>Go
+<ul>
+<li>Gofmt</li>
+<li>Revel</li>
+<li>Gin</li>
+<li>Echo</li>
+</ul>
+</li>
+<li>PHP
+<ul>
+<li>Laravel</li>
+<li>ThinkPHP</li>
+</ul>
+</li>
+</ul>
+<h4>有序列表</h4>
+<ol>
+<li>Go
+<ol>
+<li>Gofmt</li>
+<li>Revel</li>
+<li>Gin</li>
+<li>Echo</li>
+</ol>
+</li>
+<li>PHP
+<ol>
+<li>Laravel</li>
+<li>ThinkPHP</li>
+</ol>
+</li>
+<li>Java</li>
+</ol>
+<h3>表格</h3>
+<p>如果需要展示数据什么的，可以选择使用表格哦</p>
+<p>| header 1 | header 3 |
+| -------- | -------- |
+| cell 1   | cell 2   |
+| cell 3   | cell 4   |
+| cell 5   | cell 6   |</p>
+<h3>段落</h3>
+<p>留空白的换行，将会被自动转换成一个段落，会有一定的段落间距，便于阅读。</p>
+<p>请注意后面 Markdown 源代码的换行留空情况。</p>
+<h3>任务列表</h3>
+<ul>
+<li>[x] 完成 Markdown 教程</li>
+<li>[] 完成简书项目</li>
+</ul>
