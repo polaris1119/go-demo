@@ -17,3 +17,9 @@ func BenchmarkNew2(b *testing.B) {
 		singleton.New2()
 	}
 }
+
+func BenchmarkNew3(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		singleton.New3()
+	}
+}

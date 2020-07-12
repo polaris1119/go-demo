@@ -42,3 +42,13 @@ func (s *singleton) Add() int {
 	s.count++
 	return s.count
 }
+
+var once sync.Once
+
+func New3() *singleton {
+	once.Do(func() {
+		instance = new(singleton)
+	})
+
+	return instance
+}
